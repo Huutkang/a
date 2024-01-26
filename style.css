@@ -1,0 +1,755 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/idx_bg.jpg) no-repeat top center/cover;
+    vertical-align: baseline;
+    font-family: "K2D",sans-serif;
+    line-height: 1.4;
+    color: #03080e;
+    font-size: 16px;
+    font-weight: 300;
+}
+:root {
+    --primary: #ec994b;
+    --white: #ffffff;
+    --bg: #f5f5f5;
+  }
+  
+html {
+    border: 0;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+  }
+h1, h2, h4, h5, h6 {
+    color: #2b3035;
+    margin: 0 0 13px 0;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif!important;
+    line-height: 1.2;
+}
+h3{
+    font-size: 14px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+.text-center {
+    text-align: center!important;
+}
+#header {
+    padding-top: 46px;
+    position: relative;
+}
+.fblock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 1280px){
+    .inner {
+        padding: 0 10px;
+    }
+}
+.inner {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.header_right{
+    display: flex;
+    list-style-type: none;
+    /* position: absolute; */
+ 
+    padding-right: 30px
+}
+.header_right li {
+    padding-right: 9px;
+}
+.header_right li a {
+    transition: .3s all ease-in-out;
+    transform: translateY(0px);
+    display: table;
+}
+.key {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 150px);
+}
+.idx_light {
+    position: absolute;
+    top: 0;
+    left: calc(45% - 280px);
+    width: 480px;
+    max-width: 480px;
+}
+.main_menu {
+    padding-top: 3em;
+    position: relative;
+    z-index: 1;
+}
+.main_menu ul {
+    display: table;
+    padding-left: 1.5em;
+}
+.main_menu ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.main_menu ul li {
+    padding-left: 25px;
+    position: relative;
+}
+.main_menu ul li:hover:before {
+    transition: .3s all linear;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+.main_menu ul li:before {
+    content: "";
+    position: absolute;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/icon_menu.png) no-repeat center center/contain;
+    width: 17px;
+    height: 17px;
+    left: -1px;
+    transition: .3s all linear;
+    top: calc(50% - 8.5px);
+    opacity: 0;
+    visibility: hidden;}
+.main_menu ul li, .main_menu ul a {
+    display: table;
+}
+.main_menu ul a {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+
+.idx1 {
+    margin-top: -12em;
+    padding: 0 10px;
+}
+
+.idx1 .inner, .idx1 figure {
+    max-width: none;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+.idx1 figure img {
+    display: table;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 769px){
+.sp_only {
+    display: none;
+}
+}
+.idx2 .idx2_box {
+    padding-top: 5em;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.idx2 .idx2_box .idx2_item:last-child {
+    margin-top: 10px;
+}
+.idx2_img {
+    width: 22.8125%;
+    max-width: 219px;
+    margin: 0;
+}
+
+.idx2_img img {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,.15);
+    display: block;
+}
+.idx2 .idx2_box .idx2_item:last-child .idx2_txt {
+    background-color: #c2ecff;
+}
+.idx2_txt {
+    width: 77.1875%;
+    max-width: 726px;
+    background: rgba(255,252,195,.6);
+    font-size: 1.25em;
+    padding: 0 20px;
+    letter-spacing: 0px;
+    text-align: justify;
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.idx3 {
+    padding: 6em 0;
+}
+.idx3 .inner {
+    max-width: 1174px;
+}
+.idx3 .idx3_l {
+    width: 54%;
+    max-width: 625px;
+}
+.idx3 h3 {
+    line-height: 1;
+    font-weight: 800;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.idx3 h3 .idx3_ttl01 {
+    color: rgba(112,115,255,.9);
+}
+.idx3 h3 .idx3_ttl02 {
+    color: rgba(254,250,58,.9);
+}
+.idx3 .idx3_txt {
+    padding-left: 5em;
+    padding-top: 1em;
+}
+p.strong {
+    font-size: 1.6875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+ul.list01 {
+    margin-bottom: 15px;
+}
+ul.list01 li {
+    font-size: 1.125em;
+    letter-spacing: .025em;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/icon_li.png) no-repeat left 8px/9px;
+    padding-left: 15px;
+}
+.idx_btn a {
+    display: table;
+    font-weight: 500;
+    color: #ff7070;
+    border-bottom: 1px solid #ff7070;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: .3s all ease-in-out;
+}
+.idx3 .idx3_r {
+    width: 45%;
+    max-width: 455px;
+    position: relative;
+}
+.idx3 .idx3_box {
+    padding-top: 3em;
+    transform: rotate(45deg);
+    mix-blend-mode: multiply;
+}
+.idx3 .idx3_box .idx3_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 2.5px);
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 225px;
+    mix-blend-mode: multiply;
+}
+.idx3 .idx3_box .idx3_item a {
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1.2;
+    color: #000;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.idx3 .idx3_box .idx3_item:nth-child(1) {
+    background: rgba(105,145,228,.9);
+}
+.idx3 .idx3_box .idx3_item:nth-child(2) {
+    background: rgba(255,254,137,.9);
+}
+.idx3 .idx3_box .idx3_item:nth-child(3) {
+    background: rgba(238,152,239,.9);
+}
+.idx3 .idx3_box .idx3_item:nth-child(4) {
+    background: rgba(255,198,164,.9);
+}
+.idx3 .idx3_r:after {
+    content: "";
+    position: absolute;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/idx3_img.png) no-repeat center center/contain;
+    width: 80px;
+    height: 129px;
+    left: 90%;
+    top: 0;
+}
+/* <--swiper--> */
+.container {
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+.text-center {
+text-align: center;
+}
+
+.section-heading {
+font-size: 3rem;
+color: var(--primary);
+padding: 2rem 0;
+}
+.idx4 h3 {
+    line-height: 1;
+    text-align: center;
+    font-family: "Julietta Messie";
+    font-size: 5.9375em;
+    color: #5b5edb;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+#tranding {
+padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+#tranding {
+    padding: 7rem 0;
+}
+}
+
+#tranding .tranding-slider {
+height: 52rem;
+padding: 2rem 0;
+position: relative;
+}
+
+@media (max-width:500px) {
+#tranding .tranding-slider {
+    height: 45rem;
+}
+}
+
+.tranding-slide {
+width: 37rem;
+height: 42rem;
+position: relative;
+}
+
+@media (max-width:500px) {
+.tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+}
+.tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+}
+}
+
+.tranding-slide .tranding-slide-img img {
+    width: 37rem;
+    height: 42rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: var(--white);
+}
+
+.food-rating {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.rating ion-icon {
+    color: var(--primary);
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+.tranding-slider-control {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+.tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+}
+}
+
+@media (max-width:450px) {
+.tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+}
+}
+
+@media (max-width:990px) {
+.tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+}
+}
+
+@media (max-width:450px) {
+.tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+}
+}
+
+.tranding-slider-control .slider-arrow {
+    background: var(--white);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    left: 42%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+    font-size: 2rem;
+    color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+    content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+    position: relative;
+    width: 113px;
+    bottom: 8px;
+    }
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--primary);
+}
+/* end swiper */
+.idx7 {
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/idx7_bg.png) no-repeat top center/100% auto;
+    padding: 6em 0;
+}
+.idx7 .idx7_txt {
+    background: rgba(255,255,0,.2) url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/idx7_icon.png) no-repeat center 20px/54px;
+    padding: 70px 80px 200px;
+    text-align: center;
+    font-size: 20px;
+}
+.idx7 .idx7_img_list {
+    padding: 0 80px;
+    margin-top: -160px;
+}
+.idx7 .idx7_img_list .idx7_img {
+    width: calc(33.3333333333% - 15px);
+}
+
+#fixed_contact {
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/* footer */
+#footer {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(-45deg,#1bdbb6 0%,#0238c3 100%);
+    color: #fff;
+}
+#footer #contact {
+    padding: 40px 0 30px;
+    position: relative;
+    z-index: 1;
+}
+#footer .inner {
+    padding: 0 120px;
+    position: relative;
+    max-width: 1600px;
+}
+#footer .contact .ft_info{
+    width: 65%;
+    max-width: 628px;
+}
+#footer .ft_ttl01 {
+    font-family: "Julietta Messie";
+    font-size: 54px;
+}
+@media only screen and (min-width: 769px) and (max-width: 1280px){
+#footer .ft_ttl01 {
+    font-size: 3.5vw;
+}}
+#footer .ft_ttl02 {
+    line-height: 1.8;
+}
+
+#footer .ft_ttl02 strong {
+    font-weight: 600;
+}
+@media only screen and (min-width: 769px){
+.sp_only {
+    display: none;
+}}
+#footer .ft_logo {
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%;
+}
+#footer .ft_logo figure {
+    margin-left: 15px;
+}
+/* Service ->start */
+
+.service01 {
+    margin-top: -10px;
+}
+.service02_l, .service02_r {
+    width: 50%;
+}
+.service02_r {
+    padding-top: 5em;
+}
+.service_item {
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+.service_item .service_img {
+    width: 25%;
+}
+.service_item .service_txt {
+    width: 75%;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.service_item .service_txt ul {
+    padding-left: 20px;
+}
+.service03 .inner .service03_item {
+    width: calc(25% - 20px);
+}
+.service03 .service03_ttl {
+    mix-blend-mode: multiply;
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    background: rgba(105,145,228,.9);
+    box-shadow: 6.293px 7.771px 35px 0px rgba(3,44,55,.53);
+    line-height: 1;
+    font-weight: 700;
+    color: #000;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service03 .service03_ttl p {
+    font-size: 24px;
+    text-align: center;
+    transform: rotate(-45deg);
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+.service03 .service03_txt {
+    background: rgba(105,145,228,.6);
+    padding: 20px;
+    min-height: 90%;
+}
+.service03 .service03_txt ul li {
+    margin-bottom: 20px;
+}
+.service03 .inner .service03_item:nth-child(2) .service03_ttl {
+    background: rgba(255,254,137,.9);
+}
+.service03 .inner .service03_item:nth-child(2) .service03_txt {
+    background: rgba(255,254,137,.6);
+}
+.service03 .inner .service03_item:nth-child(3) .service03_ttl {
+    background: rgba(255,198,164,.9);
+}
+.service03 .inner .service03_item:nth-child(3) .service03_txt {
+    background: rgba(255,198,164,.6);
+}
+.service03 .inner .service03_item:nth-child(4) .service03_ttl {
+    background: rgba(238,152,239,.9);
+}
+.service03 .inner .service03_item:nth-child(4) .service03_txt {
+    background: rgba(238,152,239,.6);
+}
+
+
+
+/* contact */
+.contact_page {
+    padding: 100px 0 60px;
+}
+.contact_page .container {
+    max-width: 600px;
+}
+.contact_page .container h3 {
+    padding-bottom: 20px;
+    font-family: "Julietta Messie";
+    font-size: 5vw;
+    color: #5f5bda;
+    text-align: center;
+    line-height: 1;
+}
+.modal_frm_item {
+    margin-bottom: 10px;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+@media (min-width: 768px){
+.col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}}
+@media (min-width: 768px){
+.col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}}
+.modal_frm_item .form-control {
+    border-radius: 0;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/modal_frm_bg.png) no-repeat top center/cover;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.modal_btn {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 8px 25px;
+    font-size: 1.125em;
+    text-align: center;
+    border-radius: 0;
+    margin-left: auto;
+    display: table;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/modal_btn.png) no-repeat top center/cover;
+    border: 1px solid transparent;
+    transition: .3s all ease-in-out;
+}
+
+/* our-service */
+.wine05 {
+    margin-top: 60px;
+}
+
+.win05_bg {
+    padding: 200px 0 100px;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/wine_bg.png) no-repeat top center/contain;
+    margin-bottom: 20px;
+}
+.win05_bg .inner {
+    max-width: 1366px;
+    position: relative;
+}
+.swiper_button_prev {
+    top: calc(50% - 20px);
+    left: 0;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/idx_prev.png) no-repeat center center/contain;
+}
+.swiper_button_next {
+    top: calc(50% - 20px);
+    right: 0;
+    background: url(//thelamp.vn/wp-content/themes/the-lamp/assets/css/../images/idx_next.png) no-repeat center center/contain;
+}
+#win_slider01 {
+    position: relative;
+}
