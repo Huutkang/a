@@ -52,24 +52,27 @@
     </div>
 
     <?php
-        require_once 'ketnoi.php' 
-    ?>
-    <?php
-    if (isset($_POST['kh'])){
-        $name=$_POST['name'];
-        $phone=$_POST['phone'];
-        $email=$_POST['email'];
-        $message=$_POST['message'];
+        require_once 'ketnoi.php';
+        if (isset($_POST['kh'])){
+        $name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
 
-        if ($conn){
-            if ($conn -> query("INSERT INTO kh (name_kh, phone_kh, email_kh, message_kh) VALUES (N'$name',N'$phone',N'$email',N'$message')" )){
-                echo "<h3>đã gửi thành công. cảm ơn bạn nhé</h3>";
-            }else{
-                echo "<h3>không gửi được mẫu</h3>";
-            }
+        // Sử dụng prepared statements
+        $stmt = $conn->prepare("INSERT INTO kh (name_kh, phone_kh, email_kh, message_kh) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $name, $phone, $email, $message);
+
+        if ($stmt->execute()){
+            echo "<h3>Đã gửi thành công. Cảm ơn bạn nhé!</h3>";
+        } else {
+            echo "<h3>Không gửi được mẫu.</h3>";
         }
-    }
+
+        $stmt->close();
+        }  
     ?>
+
 
     <main id="main">
         <div class="contact_page">
